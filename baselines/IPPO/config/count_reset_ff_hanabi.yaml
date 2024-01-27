@@ -1,8 +1,8 @@
-"LR": 5e-4
+"LR": 1e-3
 "NUM_ENVS": 1024
 "NUM_STEPS": 128
 "TOTAL_TIMESTEPS": 1e10
-"UPDATE_EPOCHS": 4
+"UPDATE_EPOCHS": 6
 "NUM_MINIBATCHES": 4
 "GAMMA": 0.99
 "GAE_LAMBDA": 0.95
@@ -13,7 +13,7 @@
 "ENV_NAME": "hanabi"
 "ENV_KWARGS": {}
 "ANNEAL_LR": False
-"RESET_TYPE": "none"
+"RESET_TYPE": "count"
 
 # WandB Params
 "WANDB_MODE": "disabled"
