@@ -328,7 +328,7 @@ def main(config):
     config = OmegaConf.to_container(config) 
 
     wandb.init(
-        entity=config["ENTITY"],
+        entity=config["WANDB_ENTITY"],
         project=config["PROJECT"],
         tags=["IPPO", "FF", config["ENV_NAME"]],
         config=config,
