@@ -8,7 +8,7 @@ NVCC_TEST := $(notdir $(NVCC_RESULT))
 WANDB_API_KEY := $(shell cat ${HOME}/.oxwhirl_wandb_api_key)
 
 # Set flag for docker run command
-BASE_FLAGS=--rm -e WANDB_API_KEY=$(WANDB_API_KEY) -v ${PWD}:/home/workdir --shm-size 20G
+BASE_FLAGS=--rm -d -e WANDB_API_KEY=$(WANDB_API_KEY) -v ${PWD}:/home/workdir --shm-size 20G
 RUN_FLAGS=--gpus device=$(GPUS) $(BASE_FLAGS)
 
 DOCKER_IMAGE_NAME = jaxmarl
