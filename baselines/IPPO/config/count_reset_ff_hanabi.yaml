@@ -14,6 +14,7 @@
 "ENV_KWARGS": {}
 "ANNEAL_LR": False
 "RESET_TYPE": "count"
+"SEED": 0
 
 # WandB Params
 "WANDB_MODE": "disabled"
