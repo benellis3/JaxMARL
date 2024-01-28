@@ -335,7 +335,7 @@ def main(config):
         mode=config["WANDB_MODE"],
     )
 
-    rng = jax.random.PRNGKey(50)
+    rng = jax.random.PRNGKey(config["SEED"])
     train_jit = jax.jit(make_train(config), device=jax.devices()[0])
     out = train_jit(rng)
 
